@@ -9,9 +9,9 @@ function createGallery(elements) {
   return elements
     .map(
       (element) =>
-        `<a class="gallery__item" href="${element.original}">
+        `<li> <a class="gallery__item" href="${element.original}">
   <img class="gallery__image" src="${element.preview}" alt="${element.description}" />
-</a>`
+</a></li> `
     )
     .join("");
 }
